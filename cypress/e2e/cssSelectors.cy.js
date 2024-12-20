@@ -28,4 +28,33 @@ describe("test suite",()=>{
       cy.get('back')
       cy.get('img[alt="Refrigerators"] ').click()
     })
+    it("css selector_part2",()=>{
+
+        cy.wait(5000)
+        
+      cy.get('.a-icon-next-rounded',{ multiple: true }).should('be.visible').click()
+        cy.get('.a-icon-previous-rounded').should('be.visible').click()
+        cy.get('img[alt="Fashion accessories"]').click()
+        cy.get('img[alt="Huntlie 2 Pcs Hair Mogra Scented Rubber band Gajra Hair accessories for Women And Girls, Hair Flower Bun Artificial Gajra ..."]').should('be.visible').click()
+        cy.visit('https://www.amazon.in/')
+        cy.get("#twotabsearchtextbox").click().type("iphone 16")
+        cy.get("#nav-search-submit-button").click()
+         cy.get('img[alt="Sponsored Ad - iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with..."]').click()
+       
+   
+   
+   
+    })
+
+    it.only("css selector_part2",()=>{
+
+        cy.get("#twotabsearchtextbox").click().clear().type('fridge')
+        cy.get("#nav-search-submit-button").click()
+       
+      
+       
+   
+   
+   
+    })
 })
