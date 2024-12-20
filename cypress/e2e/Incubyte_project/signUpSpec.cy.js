@@ -1,7 +1,7 @@
 import SignUpPage from '../../support/pageobject/signUpPage'
 
 
-describe('Magento Sign Up Tests', () => {
+describe('Magento Sign Up Testcase', () => {
     it('should sign up with valid details', () => {
         const uniqueEmail = `user${Date.now()}@example.com`;
 
