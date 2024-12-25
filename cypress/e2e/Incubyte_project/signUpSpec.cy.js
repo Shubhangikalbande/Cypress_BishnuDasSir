@@ -13,4 +13,6 @@ describe('Magento Sign Up Testcase', () => {
         cy.url().should('eq', 'https://magento.softwaretestingboard.com/customer/account/'); 
         cy.contains('Welcome, Shubhangi Kalbande!')
     });
+
+    it("empty")
 });
