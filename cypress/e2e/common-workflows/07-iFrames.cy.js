@@ -31,7 +31,7 @@ describe("How To Handle iFrames In Cypress", () => {
                         .then(cy.wrap);
 
         //Enters the Welcome text and then press keyboard keys to select the text
-        iFrame.clear().type("Welcome {ctrl+a}");
+        iframe.clear().type("Welcome {ctrl+a}");
 
         //Bold button click
         cy.get("[aria-label='Bold']").click();
@@ -45,7 +45,7 @@ describe("How To Handle iFrames In Cypress", () => {
         //we can also create our custom aommand to reuse this method to be able to use for all the iframes
         //we defined or custome command in support/commands.js
         //IT will perform all the steps of getting and wrapping the iframe element behind the scenes
-        cy.getIFrame('#mce_0_ifr').clear().type("Welcome {ctrl+a}");
+        cy.getiframe('#mce_0_ifr').clear().type("Welcome {ctrl+a}");
 
         //Bold button click
         cy.get("[aria-label='Bold']").click();
