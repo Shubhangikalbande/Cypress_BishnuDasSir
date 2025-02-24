@@ -6,4 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  env: {
+    grep: "" // Leave empty, will be overridden via CLI
+  }
 });
